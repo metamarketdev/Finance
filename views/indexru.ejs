@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Крокодил Финанс</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/png" href="/images/icon.png">
+    <!-- css reset -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <!-- css style -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- javascript -->
+    <script src="/js/dynamic.js"></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="fixed-navbar">
+      <div class="nav-bars">
+        <!-- language button -->
+
+        <!-- social media -->
+        <!-- <div class="social-media">
+          <ul>
+            <a href="#"
+              ><li><i class="fab fa-telegram"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fab fa-twitter"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fab fa-instagram"></i></li
+            ></a>
+          </ul>
+        </div> -->
+        <button class="btn verify-buttonss">Договор</button>
+        
+        <div class="nav-for-laptop">
+          <div><a href="" onclick="help(); return false;">Помогите</a></div>
+          <div><a href="">Token</a></div>
+          <div><a href="https://lnk.bio/IWlk" class="social"><i class="fab fa-telegram"></i></a></div>
+          <div><a href="https://twitter.com/Crocodile_fi?s=09" class="social"><i class="fab fa-twitter"></i></a></div>
+          <div><a href="https://www.instagram.com/Crocodile.Finance" class="social"><i class="fab fa-instagram"></i></a></div>
+          <div><a href="https://www.facebook.com/crocodilefinance/" class="social"><i class="fab fa-facebook"></i></a></div>
+        </div>
+
+        <!-- change language -->
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Russian <i class="fas fa-angle-down"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a onclick="en()">English</a>
+            <a onclick="se()">Spanish</a>
+            <a onclick="zh()">Chinese</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- hamburget menu -->
+    <div class="navbarss">
+      <div class="hamburger-menu">
+        <div class="liness liness-1"></div>
+        <div class="liness liness-2"></div>
+        <div class="liness liness-3"></div>
+      </div>
+
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a onclick="help()" class="nav-link">Помогите</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Token</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://lnk.bio/IWlk" class="nav-link">Telegram</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://twitter.com/Crocodile_fi?s=09" class="nav-link">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/Crocodile.Finance" class="nav-link">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.facebook.com/crocodilefinance/" class="nav-link">Facebook</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="bass">
+      <!-- Accounting -->
+      <span class="croco-text"
+        >Крокодил <br />
+        Финансы</span
+      >
+      <div class="crocodil">
+        <img src="/images/handcrocodile-min.png" alt="crocodile" />
+      </div>
+      <div class="accounting-box">
+        <div class="accounting">
+          <div class="accountingitem">
+            <img src="/images/investment.png" alt="invest" />
+            <p>Всего инвестировано</p>
+          </div>
+          <hr />
+          <div class="acc-subtitle"><p id="ttl_inv">********* TRX</p></div>
+        </div>
+        <div class="accounting accounting2">
+          <div class="accountingitem">
+            <img src="/images/withdrawal.png" alt="withdraw" />
+            <p>Всего снято</p>
+          </div>
+          <hr />
+          <div class="acc-subtitle"><p id="ttl_with">********* TRX</p></div>
+        </div>
+        <div class="accounting">
+          <div class="accountingitem">
+            <img src="/images/marketing.png" alt="reffral" />
+            <p>Реферальные выплаты</p>
+          </div>
+          <hr />
+          <div class="acc-subtitle"><p id="ttl_ref">********* TRX</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- personal reward and invest -->
+    <div class="user-invest-reward">
+      <div class="user-reward-info">
+        <div class="user-reward-item"><p>Ваш вклад: <span id="P_inv">******</span> TRX</p></div>
+        <div class="user-line"></div>
+        <div class="user-reward-item"><p>Ваш вывод: <span id="P_with">******</span> TRX</p></div>
+      </div>
+    </div>
+
+    <div class="plan-and-invest">
+      <!-- Plans -->
+      <div id="myDIV">
+        <p>Выберите свой план</p>
+        <button class="planbtn" onclick="P1()">
+          <span class="plantitle">Plan 1</span
+          ><span class="percent">120% <span class="time">10дней</span></span>
+        </button>
+        <button class="planbtn" onclick="P2()">
+          <span class="plantitle">Plan 2</span
+          ><span class="percent">180% <span class="time">15дней</span></span>
+        </button>
+        <button class="planbtn" onclick="P3()">
+          <span class="plantitle">Plan 3</span
+          ><span class="percent">240% <span class="time">20дней</span></span>
+        </button>
+        <button class="planbtn" onclick="P4()">
+          <span class="plantitle">Plan 4</span
+          ><span class="percent">300% <span class="time">25дней</span></span>
+        </button>
+      </div>
+
+      <!-- invest & reward -->
+
+      <div class="investment">
+        <!-- invest -->
+        <div class="investitem1">
+          <p>Вкладывать деньги :</p>
+          <input
+            class="form-control"
+            type="text"
+            id="dep_size"
+            placeholder="Min : 50 , Max : ∞"
+          />
+          <button class="btn btn-block" onclick="deposit()">Депозит</button>
+        </div>
+
+        <!-- Rewards -->
+        <div class="investitem2">
+          <p >Награды : <span id="Rewards">0</span> TRX</p>
+          <button class="btn btn-block" onclick="withdraw()">Изымать</button>
+        </div>
+        <!-- account -->
+        <div class="account">
+          <div class="accountitem">
+            <div><img src="/images/account.svg" alt="user" /></div>
+            <div>
+              <p>учетная запись :</p>
+              <p id="account_address">*****************************************</p>
+            </div>
+            <div>
+              <p>Остаток средств :</p>
+              <p id="account_balance">**********</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="refral-and-allplan">
+      <!-- Active Plans -->
+      <div class="active-plan">
+        <div class="plan-title"><h1>Активные планы</h1></div>
+        <div class="all-plans" id="all-plans">
+
+          <div class="plan-box" id="cln_box">
+            <!-- detail 1 -->
+            <div class="p-detail-1 p-detail" id="inv_amount">****** <span>TRX</span></div>
+            <!-- detail 2 -->
+            <div class="p-detail-2 p-detail">
+              <span class="d-2-title">Снято</span>
+              <span class="d-2-info">1500 <span class="d-2-trx" id="with_amount">****** TRX</span></span>
+            </div>
+            <!-- detail 3 -->
+            <div class="p-detail-3 p-detail">
+              <span class="d-3-title">Строить планы</span>
+              <span class="d-3-info">** <span class="d-3-trx">дней</span></span>
+            </div>
+            <!-- detail 4 -->
+            <div class="p-detail-4 p-detail">
+              <span class="d-3-title">Прибыль</span>
+              <span class="d-3-info" id="profit_amount">***** <span class="d-3-trx">TRX</span></span>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+
+      <!-- reffral -->
+      <div class="referral">
+        <div class="referral-title">
+          <h1>РЕФЕРАЛЬНАЯ ПРОГРАММА</h1>
+        </div>
+        <div>
+          <div class="referral-description">
+            <p>
+              level-1 : 5% <br>
+              level-2 : 3% <br>
+              level-3 : 2%
+            </p>
+          </div>
+          <div class="yourlink"><p>Ваша ссылка:</p></div>
+          <div class="links">
+            <input
+              class="form-control"
+              type="text"
+              name="referralinput"
+              id="referrallink"
+              value="**************"
+              readonly
+            /><button class="btn reffrall-btn" onclick="myFunction2()">
+            КОПИРОВАТЬ ССЫЛКУ
+            </button>
+          </div>
+        </div>
+        <div>
+          <div class="refral-reward"><p>Доступные награды: <span id="ref_Rewards">***</span> TRX</p></div>
+          <div class="refralclaim">
+            <button class="btn refralclaim-btn" onclick="ref_withdraw()">НАГРАДА ПРЕТЕНЗИИ</button>
+          </div>
+          <div class="refralperson"><p>Реферальные выплаты <span id="P_ref">*******</span> TRX</p></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="site-footer">
+        <p>© 2021 Crocodile Finance. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("myDIV");
+      var btns = header.getElementsByClassName("planbtn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("actives");
+          if (current.length > 0) {
+            current[0].className = current[0].className.replace(" actives", "");
+          }
+          this.className += " actives";
+        });
+      }
+    </script>
+    <script>
+      const menuIcon = document.querySelector(".hamburger-menu");
+      const navbarss = document.querySelector(".navbarss");
+      menuIcon.addEventListener("click", () => {
+        navbarss.classList.toggle("changess");
+      });
+    </script>
+    <script>
+      document.getElementById("cln_box").style.display = "none";
+      var RefID = '<%= refid %>';
+      var CTA = '<%= CTAdress %>';
+      var rate = '<%= rate %>';
+      var owner = '<%= owner %>';
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="/js/script.js"></script>
+  <script>
+    function help(){
+      Swal.mixin({
+          confirmButtonText: 'Next &rarr;',
+          showCancelButton: true,
+          progressSteps: ['1', '2', '3', '4', '5']
+        }).queue([
+          {
+            title: 'Что такое Crocodile Finance?',
+            text: 'Crocodile Finance - это платформа с открытым исходным кодом, которая на 100% прозрачна и справедлива для всех инвесторов.'
+          },
+          {
+            title: 'Как начать зарабатывать?',
+            text: 'После каждого депозита участник может начинать выводить свои заработки каждую минуту, пока есть средства для вывода.'
+          },
+          {
+            icon: 'info',
+            text: "Вам необходимо внести депозит, чтобы получить вознаграждение вашего реферала."
+          },
+          {
+            icon: 'info',
+            text: "Минимальная сумма депозита составляет 50 TRX и не максимальная! Имейте в виду, что вы не можете вносить более 100000 TRX за каждую транзакцию."
+          },
+          {
+            icon: 'info',
+            text: "Вы можете получать прибыль, пока в контракте есть средства."
+          },
+        ]).then((result) => {
+          if (result.value) {
+            const answers = JSON.stringify(result.value)
+            Swal.fire({
+              title: 'Все сделано!',
+              text: "Удачного заработка!",
+              confirmButtonText: 'OK!'
+            })
+          }
+      })
+    }
+  </script>
+  </body>
+</html>

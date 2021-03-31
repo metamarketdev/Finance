@@ -1,0 +1,931 @@
+/* font face */
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/iransans/woff/IRANSansWeb.woff) format("woff"),
+    url(../fonts/iransans/ttf/IRANSansWeb.ttf) format("truetype"),
+    url(../fonts/iransans/eot/IRANSansWeb.eot) format("eot");
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div {
+  font-family: Tahoma;
+}
+.navbarss {
+  display: none;
+}
+
+.nav-for-laptop {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  justify-content: space-around;
+}
+.nav-for-laptop a {
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.social {
+  font-size: 1.3rem !important;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #303841;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+/* Dropdown button on hover & focus */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: static;
+  z-index: 20;
+  top: 20px !important;
+  right: 1.2rem;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+body {
+  background-image: url("../images/swamp-min.jpg");
+  background-attachment: fixed;
+}
+
+.verify-buttonss {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+}
+.verify-buttonss:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* navbar */
+
+.nav-bars {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: #303841;
+}
+
+.change-language {
+  z-index: 30;
+  position: fixed;
+  top: 1.8rem;
+  right: 1.8rem;
+  color: #ffffff;
+}
+
+/* Attribute */
+.attributes {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
+.attributes .attitem {
+  width: 20%;
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 0.5rem solid #f0f0fa;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.attributes .attitem .symbol {
+  background-color: #8566ff;
+  padding: 0.5rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+}
+.attributes .attitem:first-child .symbol {
+  background-color: #8566ff;
+  padding: 0.5rem 0.8rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+}
+
+/* break point for mobile */
+@media screen and (max-width: 500px) {
+  .nav-for-laptop {
+    display: none;
+  }
+  .fixed-navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+  }
+  .nav-bars {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: #303841;
+  }
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: #303841;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  /* Dropdown button on hover & focus */
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: fixed;
+    z-index: 20;
+    top: 20px !important;
+    right: 1.6rem !important;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display: block;
+  }
+
+  /* hamburger-menue */
+  .navbarss {
+    width: 11rem;
+    height: 15rem;
+    top: 4.3rem;
+    left: -50rem;
+    position: fixed;
+    z-index: 20;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.3rem;
+    transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+  }
+  .changess {
+    left: 1rem;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .nav-link {
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  .hamburger-menu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    /* z-index: 12; */
+    top: 1.4rem;
+    left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  .liness {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.8s;
+  }
+  .changess .liness-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+  }
+  .changess .liness-2 {
+    opacity: 0;
+  }
+  .changess .liness-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px);
+  }
+  /* end hamburget menue */
+  .attributes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .attributes .attitem {
+    width: 45%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+  .attributes .attitem .symbol {
+    margin-top: -1.5rem;
+  }
+  .attributes .attitem .symboltext {
+    margin-top: 0.8rem;
+  }
+  .generalinfo {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .accounting {
+    width: 90% !important;
+    margin: 0 auto;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .bass {
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 7rem auto 0 auto !important;
+  }
+  .crocodil img {
+    width: 13rem !important;
+    height: 7rem !important;
+    position: relative;
+    top: 0.3rem;
+    right: 0 !important;
+    margin-right: 0.9rem;
+  }
+  .croco-text {
+    /* color: #ffffff; */
+    text-align: left !important;
+    font-weight: bold;
+    font-size: 2.1rem;
+    position: relative;
+    left: 1rem;
+    top: 1.4rem;
+    line-height: 2.5rem;
+    text-shadow: -6px 7px 11px #ffffff;
+  }
+  .investment {
+    width: 90% !important;
+    box-shadow: 0px 0px 27px -12px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 0px 0px 27px -12px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 0px 0px 27px -12px rgba(0, 0, 0, 0.63);
+    /* width: 90% !important; */
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    position: relative !important;
+    top: -2rem !important;
+    left: 0 !important;
+  }
+  .invest-plans {
+    width: 90%;
+    margin: 4rem auto 2rem auto !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-items: center !important;
+  }
+  .active-plan {
+    width: 80% !important;
+    padding: 0.7rem;
+    margin: 2rem auto 10rem auto;
+    position: static !important;
+  }
+  .all-plans {
+    height: 15rem !important;
+  }
+  .accounting2 {
+    margin: 1.3rem auto;
+  }
+
+  /* plans */
+  #myDIV {
+    width: 90% !important;
+    margin: 1rem auto 0 auto !important;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    border-radius: 2rem 2rem 0 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 3rem 2rem !important;
+  }
+  #myDIV p {
+    margin-bottom: 0.8rem;
+  }
+  .planbtn {
+    display: flex;
+    width: 100% !important;
+    justify-content: space-between !important;
+    background-color: #fcfcfc !important;
+    margin: 0.5rem 0;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    /* background-color: #f1f1f1; */
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    height: auto !important;
+  }
+
+  /* plan and invest */
+  .plan-and-invest {
+    width: 90% !important;
+    margin: 7rem auto 0 auto !important;
+    display: block !important;
+    position: static !important;
+  }
+  .plantitle {
+    font-weight: 100 !important;
+    font-size: 1rem !important;
+  }
+
+  /* account box */
+  .accounting-box {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  /* referral and plans */
+  .refral-and-allplan {
+    width: 100% !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    position: static !important;
+  }
+  .referral {
+    width: 100% !important;
+    display: flex;
+    border-radius: 0 !important;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ecf4f3;
+    padding: 2rem !important;
+  }
+  .reffrall-btn {
+    font-size: 11px !important;
+  }
+  .site-footer {
+    background-color: #ecf4f3;
+    margin-top: 0 !important;
+    text-align: center;
+    padding: 2rem 3rem !important;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-size: 15px !important;
+    color: #6e6d7a;
+    border-top: 1px solid #7baca8;
+  }
+
+  /* user invest reward */
+  .user-invest-reward {
+    display: flex;
+    margin: 3rem auto 0 auto !important;
+    width: 90% !important;
+  }
+  .user-reward-info {
+    /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    background-color: #e85d04;
+    width: 90% !important;
+    border-radius: 2rem;
+    padding: 1rem !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-items: center !important;
+    margin: 0 auto;
+  }
+  .user-reward-item {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1.5rem !important;
+    border-radius: 3px;
+    color: #263238;
+    font-size: 1rem !important;
+  }
+  .user-line {
+    width: 100% !important;
+    height: 1px !important;
+    background-color: #9e9e9e;
+  }
+}
+
+/* plan  */
+
+.percent {
+  font-size: 16px;
+  font-weight: 100 !important;
+}
+.time {
+  font-size: 13px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.actives {
+  background-image: linear-gradient(
+    to right,
+    #6a11cb 0%,
+    #2575fc 100%
+  ) !important;
+  color: white;
+}
+
+/* crocodil image */
+
+.croco-text {
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.1rem;
+  position: relative;
+  left: 1rem;
+  top: 1.4rem;
+  line-height: 2.5rem;
+  text-shadow: -6px 7px 11px #000000;
+  opacity: 0.9;
+}
+
+.crocodil {
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+
+.crocodil img {
+  width: 13rem;
+  height: 7rem;
+  position: relative;
+  top: 0.3rem;
+  right: 7rem;
+  margin-right: 0.9rem;
+}
+
+/* general info */
+.generalinfo {
+  padding: 2.2rem 2rem;
+  width: 48%;
+  background-color: #ffffff;
+  background-size: 100% 100%;
+  border-radius: 2rem;
+}
+.generalinfo #reffralreward {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 2px solid #e0e0e0;
+}
+.infobutton {
+  width: 20px;
+  height: 20px;
+  bottom: 0.8rem;
+  position: relative;
+  background-color: #ffffff;
+  display: inline-block;
+}
+.reffrallevel {
+  color: #424242;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+}
+.reffrallink {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.refinput {
+  width: 70%;
+}
+
+/* Accounting */
+
+.accounting {
+  padding: 2rem 2.3rem;
+  width: 30%;
+  border-radius: 2rem;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  background-size: 100% 100%;
+  color: #ffffff;
+}
+.accounting .accountingitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 1rem 0;
+}
+.accounting .accountingitem img {
+  width: 2rem;
+}
+.acc-subtitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* bass */
+.bass {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 3rem auto 0 auto;
+  justify-content: space-around;
+}
+.accounting-box {
+  display: flex;
+  width: 87%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+/* plan and invest */
+.plan-and-invest {
+  width: 80%;
+  margin: 6rem auto 3rem auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  position: relative;
+  left: -2rem;
+}
+
+#myDIV {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 52%;
+  padding: 3rem 3rem 3rem 6rem;
+  border-radius: 0 2rem 2rem 0;
+  text-align: center;
+  font-size: 20px;
+}
+.planbtn {
+  display: flex;
+  width: 87%;
+  height: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+  margin: 0.5rem 0;
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  border: 1px solid #9e9e9e;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#myDIV p {
+  font-weight: bold;
+}
+
+.plantitle {
+  font-size: 20px;
+}
+
+/* investment */
+.investment {
+  width: 48%;
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #bdbdbd !important;
+  background: rgb(171, 193, 237);
+  background: linear-gradient(
+    357deg,
+    rgba(171, 193, 237, 1) 0%,
+    rgba(247, 193, 235, 1) 100%
+  );
+  border-radius: 2rem;
+  position: relative;
+  left: 3rem;
+}
+.investitem1 {
+  margin: 1rem 0 3rem 0;
+}
+.investitem1 input {
+  margin: 1rem 0;
+}
+.investitem1 button {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+.investitem2 button {
+  background-color: #0d47a1;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+/* account */
+
+.account {
+  text-align: left;
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f6f8;
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.accountitem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+.accountitem p {
+  margin: 0.5rem 0;
+}
+.accountitem img {
+  width: 5rem;
+  height: 3rem;
+  position: relative;
+  right: 5px;
+}
+
+/* active plans */
+
+.active-plan {
+  width: 48%;
+  padding: 1rem;
+  background-color: #ecf4f3;
+  border-radius: 2rem;
+  position: relative;
+  left: 3rem;
+  border-right: 1px solid #9e9e9e;
+  box-shadow: 4px 0px 30px 1px rgba(158, 158, 158, 0.75);
+  -webkit-box-shadow: 4px 0px 30px 1px rgba(158, 158, 158, 0.75);
+  -moz-box-shadow: 4px 0px 30px 1px rgba(158, 158, 158, 0.75);
+}
+.plan-title {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  padding: 1rem;
+  color: #ffffff;
+  text-shadow: 0px -1px 9px rgba(0, 0, 0, 0.48);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 2.2px;
+  word-spacing: 1.6px;
+  font-family: Tahoma;
+  border-radius: 2rem;
+}
+.all-plans {
+  background-color: #ecf4f3;
+  padding: 1rem;
+  height: 23rem;
+  border-radius: 0 0 2rem 2rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.plan-box {
+  background-color: #ffffff;
+  padding: 0.7em;
+  margin-bottom: 1rem;
+}
+.p-detail-1 {
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem;
+}
+.p-detail-1 span {
+  font-size: 0.7rem;
+  margin-left: 4px;
+  color: #424242;
+}
+.p-detail-3 {
+  margin: 0.5rem 0;
+}
+.p-detail-2,
+.p-detail-3,
+.p-detail-4 {
+  padding: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-left: 2px solid #2b6bd9;
+}
+
+.invest-plans {
+  width: 90%;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.crocoimage {
+  margin: 0.5rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.crocoimage img {
+  width: 80%;
+  border-radius: 2rem;
+}
+
+/* reffral and allplan */
+.refral-and-allplan {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: -2rem;
+}
+.referral {
+  width: 52%;
+  display: flex;
+  border-radius: 0 2rem 2rem 0;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ecf4f3;
+  padding: 3rem 3rem 3rem 6rem;
+}
+.referral-title {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.referral-description {
+  text-align: center;
+  color: #5f618a;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.yourlink {
+  margin: 2rem 0 0.4rem 0;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.links {
+  display: flex;
+}
+.links button {
+  background-color: #5f918b;
+  color: #ffffff;
+}
+#referrallink {
+  width: 70%;
+  position: relative;
+  left: 5px;
+}
+.reffrall-btn {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.reffrall-btn:hover {
+  color: #ffffff;
+  background-color: #71b099;
+}
+.refral-reward {
+  margin-top: 1.6rem;
+  color: #679e91;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.refralclaim {
+  display: flex;
+  justify-content: center;
+}
+.refralclaim-btn {
+  background-color: #5f918b;
+  color: #ffffff;
+  margin: 1rem 0;
+  font-size: 15px;
+}
+.refralclaim-btn:hover {
+  background-color: #71b099;
+  color: #ffffff;
+}
+.refralperson {
+  display: flex;
+  justify-content: center;
+}
+.refralperson {
+  font-weight: bold;
+  color: #424242;
+}
+
+.site-footer {
+  background-color: #ecf4f3;
+  margin-top: 8rem;
+  text-align: center;
+  padding: 3rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  font-size: 16px;
+  color: #6e6d7a;
+}
+
+/* user invest and reward */
+/* personal invest and reward */
+
+.user-invest-reward {
+  display: flex;
+  margin: 3rem auto 0 auto;
+  width: 100%;
+}
+.user-reward-info {
+  background-color: #e85d04;
+  width: 50%;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.user-reward-item {
+  padding: 2rem;
+  border-radius: 3px;
+  color: #ffffff;
+}
+.user-line {
+  height: 100%;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}

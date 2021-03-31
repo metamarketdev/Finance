@@ -1,0 +1,16 @@
+{
+  "name": "crocodilefinance",
+  "version": "1.0.0",
+  "description": "Crocodile Finance\u001b[3;5~\u001b[3;5~\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[C\u001b[C\u001b[C\u001b[C\u001b: This is dapp made on Tron blockchain.",
+  "main": "crocodile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Soroush-XYZ",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "tronweb": "^3.2.6"
+  }
+}
