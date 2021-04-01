@@ -21,4 +21,6 @@ CONTRACTADDRESS='Smart_Contract_Address'
 OWNERADDRESS='Your_Own_Wallet_Address'
 ```
 
-4- Run `node crocodile.js` and you should get the app perfectly running.
+4- Run `node crocodile.js` and you should get the app perfectly running on port 3000.
+
+5- The DApp uses the Nile Testnet by default. In order to use the Mainnet replace `https://api.nile.trongrid.io` with `https://api.trongrid.io` lines 12,13,14 of crocodile.js file. 
